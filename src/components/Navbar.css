@@ -1,0 +1,13 @@
+.navbar {
+  background-color: rgb(147, 193, 156);
+}
+
+.signIcon {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.userName {
+  text-decoration: underline;
+  font-weight: 700;
+}

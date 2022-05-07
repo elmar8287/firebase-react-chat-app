@@ -3,3 +3,5 @@
 - initialize Firebase
 - import into index.js file firebase tools
 - npm i react-router-dom firebase react-firebase-hooks
+- add routes.js file to main root
+- 
