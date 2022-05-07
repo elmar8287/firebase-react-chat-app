@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import './App.css';
 import {BrowserRouter as Router} from 'react-router-dom';
-import Navigation from './components/Navbar';
-import Chat from './components/Chat';
-import Login from './components/Login';
+import Navigation from '../Navbar/Navbar';
+import Chat from '../Chat/Chat';
+import Login from '../Login/Login';
 
 function App() {
-  const [user, setUser] = useState(true)
+  const [user, setUser] = useState(false)
+  const login = () => {
+    setUser(true)
+  }
   return (
     <Router>
       <Navigation user={user}/>
       {
-        user ? <Chat /> : <Login />
+        user ? <Chat /> : <Login login={login}/>
       }
     </Router>
   );
